@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'TabTask';
+
+    selectedSkill : string = 'angular'
+
+  onSkillChange(skill : string){
+    this.selectedSkill = skill
+  }
 }
