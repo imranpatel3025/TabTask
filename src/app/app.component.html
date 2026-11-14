@@ -1,3 +1,9 @@
+
+<app-tab-task-ng-for></app-tab-task-ng-for>
+<hr>
+<h1 class="text-center">
+  Tab Task Using ngIf
+</h1>
 <div class="card">
   <div class="card-body bg-warning">
 
@@ -10,7 +16,8 @@
         </a>
       </li>
       <li class="nav-item">
-        <a (click)="onSkillChange('expressJS')" [ngClass]="{
+        <a 
+        (click)="onSkillChange('expressJS')" [ngClass]="{
       active : selectedSkill.includes('expressJS')
     }" href="#" class="nav-link">
           ExpressJS
@@ -60,8 +67,7 @@
 
       <p *ngIf="selectedSkill.includes('mongoDB')" class="alert alert-info">
         <b>MongoDB</b> is a NoSQL database used to store and manage application data. Unlike relational databases,
-        MongoDB
-        stores data in the form of collections and documents using a JSON-like format called BSON. We can perform CRUD
+        MongoDB stores data in the form of collections and documents using a JSON-like format called BSON. We can perform CRUD
         operations such as Insert, Read, Update, and Delete. For example, in a student management application, MongoDB
         stores student names, ages, addresses, and other information.
       </p>
